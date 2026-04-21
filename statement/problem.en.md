@@ -5,10 +5,10 @@ Your safe zone, which is called "insert name", is equipped with the newest and b
 
 A zombie has been spotted within the walls of the safe zone and may have infected others. We need to find all the infected immediately to stop the virus from doing anymore damage. Luckily, the safe zone has mass surveillance, which can be used to see every interaction the zombie has had. 
 
-Once a person becomes infected, they infect others the day they get infected plus the following day. On the next day they start showing symptoms but are no longer able to infect others. For example, a person gets infected on day 2, meaning they can infect others on day 2 and day 3, and on day 4 they start showing symptoms and can no longer infect others.
+Once a person becomes infected, they infect others on the following three days. Two days after a person becomes infected, they start showing symptoms. For example, Alice gets infected on day 0, meaning she can infect others on day 1 to day 4, and on day 2 she starts showing symptoms.
 
 # Input
-on the first line of input is the name of the initially  infected person (patient zero) followed by an integer x, indicating the day on which the person started showing symptoms. 
+On the first line of input is the name of the initially  infected person (patient zero) followed by an integer x, indicating the day on which the person started showing symptoms. 
 
 The second line contains an integer N, the total number of people in the safe zone.
 
