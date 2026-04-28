@@ -1,0 +1,15 @@
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/bin/Debug/net10.0/cszombie
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/bin/Debug/net10.0/cszombie.deps.json
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/bin/Debug/net10.0/cszombie.runtimeconfig.json
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/bin/Debug/net10.0/cszombie.dll
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/bin/Debug/net10.0/cszombie.pdb
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.GeneratedMSBuildEditorConfig.editorconfig
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.AssemblyInfoInputs.cache
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.AssemblyInfo.cs
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.csproj.CoreCompileInputs.cache
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.sourcelink.json
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.dll
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/refint/cszombie.dll
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.pdb
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/cszombie.genruntimeconfig.cache
+/Users/annarasmussen/Desktop/4._semester/APS/apsexam/submissions/accepted/cszombie/obj/Debug/net10.0/ref/cszombie.dll

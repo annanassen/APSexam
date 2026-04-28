@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submissions", "submissions", "{D9B07C85-5C5A-C849-8AB1-149737F84F41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "accepted", "accepted", "{C5EC4756-F143-B141-58EC-C5D087B36ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cszombie", "submissions\accepted\cszombie\cszombie.csproj", "{AC5D7B75-43EB-C3B9-2738-E200543FA30C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC5D7B75-43EB-C3B9-2738-E200543FA30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5D7B75-43EB-C3B9-2738-E200543FA30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5D7B75-43EB-C3B9-2738-E200543FA30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5D7B75-43EB-C3B9-2738-E200543FA30C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5EC4756-F143-B141-58EC-C5D087B36ADE} = {D9B07C85-5C5A-C849-8AB1-149737F84F41}
+		{AC5D7B75-43EB-C3B9-2738-E200543FA30C} = {C5EC4756-F143-B141-58EC-C5D087B36ADE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57ACA764-7F7C-4FA9-A20A-683E16528649}
+	EndGlobalSection
+EndGlobal
