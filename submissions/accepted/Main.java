@@ -4,12 +4,13 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Deque;
 import java.util.ArrayDeque;
 
-public class javaSolution {
+public class Main {
 
     static class Edge{
         String node;
@@ -44,8 +45,8 @@ public class javaSolution {
         HashMap<String, List<Edge>> hm = new HashMap<>();
 
         for (int i = 0; i < size; i++) {
-            String input = scanner.nextLine();
-            String[] line = input.split(" ");
+            String input = scanner.nextLine().trim();
+            String[] line = input.split("\\s+");
 
             String node1 = line[0];
 
@@ -53,7 +54,11 @@ public class javaSolution {
                 hm.put(node1, new ArrayList<>());
             }
 
-            for (int j = 1; j < line.length; j = j + 2){
+            if (line.length == 1){
+                continue;
+            }
+
+            for (int j = 1; j + 1 < line.length; j = j + 2){
                 String node2 = line[j];
                 int day = Integer.parseInt(line[j+1]);
                 Edge edge = new Edge(node2, day);
@@ -75,6 +80,10 @@ public class javaSolution {
         while(!dq.isEmpty()){
             String node = dq.pollFirst();
 
+            if (!hm.containsKey(node)){
+                continue;
+            }
+
             for (Edge edge : hm.get(node)){
                 String neighbor = edge.getNode();
                 int day = edge.getDay();
@@ -91,7 +100,10 @@ public class javaSolution {
             }
 
         }
-        for( String person : infected){
+        List<String> result = new ArrayList<>(infected);
+        Collections.sort(result);
+
+        for( String person : result){
                 System.out.println(person);
             }
     }
