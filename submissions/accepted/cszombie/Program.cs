@@ -35,24 +35,36 @@ SortedSet<String> infected = new SortedSet<string>();
 Dictionary<String, int> infectionDay = new Dictionary<string, int>();
 Queue<String> q = new Queue<string>();
 
+infected.Add(patient0);
+infectionDay[patient0] = dayOfSymptoms - 2;
+
 q.Enqueue(patient0);
 
 while(q.Count > 0)
 {
     String curPerson = q.Dequeue();
 
-    List<(String,int)> list = graph[curPerson];
-
-    if (infected.Contains(curPerson))
+   foreach((string, int) tuple in graph[curPerson])
     {
-        continue;
-    }
+        string neighbor = tuple.Item1;
+        int day = tuple.Item2;
 
-    
+        if (infected.Contains(neighbor)){
+            continue;
+        }
+        if (day > infectionDay[curPerson] && day <= (infectionDay[curPerson] + infectionPeriod)){
+                    infected.Add(neighbor);
+                    infectionDay[neighbor] = day;
+                    q.Enqueue(neighbor);
+                }
+    }    
 }
 
-infected.Add(patient0);
-infectionDay[patient0] = dayOfSymptoms - 2;
+foreach (string zombie in infected)
+{
+    Console.WriteLine(zombie);
+}
+
 
 
 
