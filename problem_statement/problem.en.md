@@ -8,13 +8,13 @@ A zombie has been spotted within the walls of the safe zone and may have infecte
 Once a person becomes infected, they infect others on the following three days. Two days after a person becomes infected, they start showing symptoms. For example, Alice gets infected on day 0, meaning she can infect others on day 1 to day 4, and on day 2 she starts showing symptoms.
 
 # Input
-On the first line of input is the name of the initially  infected person (patient zero) followed by an integer x, indicating the day on which the person started showing symptoms. 
+On the first line of input is the name of the initially infected person (patient zero) followed by an integer $x$, ($0 \le x \le 14$) indicating the day on which the person started showing symptoms. 
 
-The second line contains an integer N, the total number of people in the safe zone.
+The second line contains an integer $N$ ($0 \le N \le 10^5$), the total number of people in the safe zone.
 
-The following N lines describe one person. Each line starts with the name of the person followed by zero or more interaction description.
+The following N lines describe one person. Each line starts with the name of the person followed by zero to three interaction descriptions.
 
-Each interaction description consists of the name of another person, immediately followed by an integer d, indicating the day on which the interaction took place.
+Each interaction description consists of the name of another person, immediately followed by an integer $d$, ($0 \le d \le 14$) indicating the day on which the interaction took place.
 
 All interactions are bidirectional.
 
