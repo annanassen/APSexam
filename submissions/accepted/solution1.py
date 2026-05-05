@@ -36,13 +36,15 @@ while q:
       node = q.popleft()
 
       for neighbor, interactionTime in G[node]:
-      
+            
             if (neighbor in infected):
                   continue
+           
             min = infectionTime[node] +1
-            max = infectionTime[node] +3
-
+            max = infectionTime[node] +4
+            
             if min <= interactionTime <= max:
+                
                 infected.add(neighbor)
 
                 infectionTime[neighbor] = interactionTime
