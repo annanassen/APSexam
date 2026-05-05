@@ -1,4 +1,3 @@
-package submissions.accepted;
 
 import java.util.Scanner;
 import java.util.HashMap;
