@@ -60,9 +60,15 @@ public class Main {
             for (int j = 1; j + 1 < line.length; j = j + 2){
                 String node2 = line[j];
                 int day = Integer.parseInt(line[j+1]);
-                Edge edge = new Edge(node2, day);
+                Edge edge1 = new Edge(node2, day);
+                Edge edge2 = new Edge(node1, day);
 
-                hm.get(node1).add(edge);
+                if(!hm.containsKey(node2)){
+                    hm.put(node2, new ArrayList<>());
+                }
+
+                hm.get(node1).add(edge1);
+                hm.get(node2).add(edge2);
             }
             
         }
