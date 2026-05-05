@@ -3,7 +3,7 @@ from collections import deque
 
 pationt0 , infectedAt =  input().split()
 n = int(input())
-infectionPeriod = 2
+# infectionPeriod = 2
 
 G = {}
 
@@ -27,7 +27,7 @@ infectionTime = {}
 
 
 infected.add(pationt0)
-infectionTime[pationt0] = int(infectedAt) 
+infectionTime[pationt0] = int(infectedAt) -2 
 
 q = deque()
 q.append(pationt0)
@@ -39,8 +39,12 @@ while q:
       
             if (neighbor in infected):
                   continue
-            if infectionTime[node] <= interactionTime and infectionTime[node] > interactionTime - infectionPeriod:
+            min = infectionTime[node] +1
+            max = infectionTime[node] +3
+
+            if min <= interactionTime <= max:
                 infected.add(neighbor)
+
                 infectionTime[neighbor] = interactionTime
                 q.append(neighbor)
 

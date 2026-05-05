@@ -1,10 +1,10 @@
-problem_format_version:  2025-09
+# Specification: https://icpc.io/problem-package-format/spec/2025-09.html
+problem_format_version: legacy
+# 'pass-fail', 'interactive', 'multi-pass', or 'interactive multi-pass'
+type: pass-fail
 name: To Zombie or not to be (a question for mass surveillance)
-uuid: Zombie(aps)
-credits:
-  authors:
-    - Anna Rasmussen <annar@itu.dk>
-    - Mette My Gabelgaard <mmga@itu.dk>
-  contributers:
-    - Anna Rasmussen <annar@itu.dk>
-    - Mette My Gabelgaard <mmga@itu.dk>
+uuid: 8ee7605a-1f13-871d-170b-d8dd57c43289
+author: Anna Rasmussen <annar@itu.dk> Mette My Gabelgaard <mmga@itu.dk>
+license: "public domain"
+# limits:
+#   time_limit: 1.0
