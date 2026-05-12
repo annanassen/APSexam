@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
@@ -8,6 +7,9 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Deque;
 import java.util.ArrayDeque;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
@@ -29,22 +31,25 @@ public class Main {
         }
 
     }
-    public static void main (String[] args) {
+    public static void main (String[] args) throws IOException {
 
-        Scanner scanner = new Scanner(System.in);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String patient0 = scanner.next();
-        int ShowsSymptomsAt = scanner.nextInt();
-        int size = scanner.nextInt();
+        
+
+        String[] line1 = reader.readLine().split(" ");
+        String patient0 = line1[0];
+
+        int ShowsSymptomsAt = Integer.parseInt(line1[1]);
+        int size = Integer.parseInt(reader.readLine());
 
         int infectionTime = 4;
 
-        scanner.nextLine();
 
         HashMap<String, List<Edge>> hm = new HashMap<>();
 
         for (int i = 0; i < size; i++) {
-            String input = scanner.nextLine().trim();
+            String input = reader.readLine().trim();
             String[] line = input.split("\\s+");
 
             String node1 = line[0];
