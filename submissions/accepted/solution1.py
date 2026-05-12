@@ -1,15 +1,15 @@
 from collections import deque
+import sys
 
-
-pationt0 , infectedAt =  input().split()
-n = int(input())
+pationt0 , infectedAt =  sys.stdin.readline().split()
+n = int(sys.stdin.readline())
 # infectionPeriod = 2
 
 G = {}
 
 
 for _ in range(n):
-    line = input().split()
+    line = sys.stdin.readline().split()
     node1 = line[0]
     if not G.get(node1):
              G[node1] = list()

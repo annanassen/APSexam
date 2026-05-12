@@ -1,24 +1,32 @@
-pationt0, infectedAt = input().split()
-n = int(input())
+import sys
+
+pationt0, infectedAt = sys.stdin.readline().split()
+n = int(sys.stdin.readline())
 infectionPeriod = 2
 
 G = {}
 infectionTime = {}
-
-infectionTime[pationt0] = int(infectedAt)
+infected = set()
+infected.add(pationt0)
+infectionTime[pationt0] = int(infectedAt) -2
 
 def dfs(current):
+    global G, infected 
+  
     for neighbor, interactionTime in G[current]:
+        
         if neighbor not in infectionTime:
             min = infectionTime[current] +1
-            max = infectionTime[current] +3
+            max = infectionTime[current] +4
 
             if min <= interactionTime <= max:
+               
+                infected.add(neighbor)
                 infectionTime[neighbor] = interactionTime
                 dfs(neighbor)
 
 for _ in range(n):
-    line = input().split()
+    line = sys.stdin.readline().split()
     node1 = line[0]
 
     if node1 not in G:
@@ -36,4 +44,5 @@ for _ in range(n):
 
 dfs(pationt0)
 
-print(infectionTime)
+for no in sorted(infected):
+      print(no)
