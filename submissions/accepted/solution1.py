@@ -3,7 +3,7 @@ import sys
 
 pationt0 , infectedAt =  sys.stdin.readline().split()
 n = int(sys.stdin.readline())
-# infectionPeriod = 2
+
 
 G = {}
 
@@ -44,12 +44,10 @@ while q:
             max = infectionTime[node] +4
             
             if min <= interactionTime <= max:
-                
                 infected.add(neighbor)
 
                 infectionTime[neighbor] = interactionTime
                 q.append(neighbor)
 
 for no in sorted(infected):
-      print(no)
-      
+      print(no)     
