@@ -12,11 +12,11 @@ if line[0] == '0':
 if not re.match(r"^[A-Za-z][A-Za-z0-9]*$", patient0):
     print(f"regex failing", file=sys.stderr)
     sys.exit(43)
-if not re.match(r"^[1-9][0-9]*", b):
+if not re.match(r"^(0|[1-9][0-9]*)$", b):
     print(f"regex failing", file=sys.stderr)
     sys.exit(43)
 
-if not re.match(r"^[1-9][0-9]*", n):
+if not re.match(r"^(0|[1-9][0-9]*)$", n):
     print(f"regex failing", file=sys.stderr)
     sys.exit(43)
 
@@ -38,7 +38,7 @@ for _ in range(int(n)):
 
 
         time = int(line[interation+1])
-        if not re.match(r"^[1-9][0-9]*", n):
+        if not re.match(r"^(0|[1-9][0-9]*)$", n):
             print(f"regex failing", file=sys.stderr)
             sys.exit(43)
   
