@@ -1,13 +1,16 @@
 
-import java.util.Scanner;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.StringTokenizer;
 import java.util.Deque;
 import java.util.ArrayDeque;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
@@ -29,37 +32,37 @@ public class Main {
         }
 
     }
-    public static void main (String[] args) {
+    public static void main (String[] args) throws IOException {
 
-        Scanner scanner = new Scanner(System.in);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        
+        String line1 = reader.readLine();
+        StringTokenizer st = new StringTokenizer(line1);
 
-        String patient0 = scanner.next();
-        int ShowsSymptomsAt = scanner.nextInt();
-        int size = scanner.nextInt();
+        String patient0 = st.nextToken();
+
+        int ShowsSymptomsAt = Integer.parseInt(st.nextToken());
+        int size = Integer.parseInt(reader.readLine());
 
         int infectionTime = 4;
 
-        scanner.nextLine();
 
         HashMap<String, List<Edge>> hm = new HashMap<>();
 
         for (int i = 0; i < size; i++) {
-            String input = scanner.nextLine().trim();
-            String[] line = input.split("\\s+");
-
-            String node1 = line[0];
+            String input = reader.readLine().trim();
+            StringTokenizer st1 = new StringTokenizer(input);
+           
+            String node1 = st1.nextToken();
 
             if (!hm.containsKey(node1)){
                 hm.put(node1, new ArrayList<>());
             }
 
-            if (line.length == 1){
-                continue;
-            }
 
-            for (int j = 1; j + 1 < line.length; j = j + 2){
-                String node2 = line[j];
-                int day = Integer.parseInt(line[j+1]);
+            while (st1.hasMoreTokens()){
+                String node2 = st1.nextToken();
+                int day = Integer.parseInt(st1.nextToken());
                 Edge edge1 = new Edge(node2, day);
                 Edge edge2 = new Edge(node1, day);
 
@@ -85,11 +88,11 @@ public class Main {
         while(!dq.isEmpty()){
             String node = dq.pollFirst();
 
-            if (!hm.containsKey(node)){
-                continue;
-            }
+    
+            List<Edge> list = hm.get(node);
+            if (list == null) continue;
 
-            for (Edge edge : hm.get(node)){
+            for (Edge edge : list){
                 String neighbor = edge.getNode();
                 int day = edge.getDay();
 
