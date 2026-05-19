@@ -29,10 +29,7 @@ updated = True
 
 while updated:
     updated = False
-    
-    for person,infectionTime in infected:
-
-        for a,b,t in interactions:
+    for a,b,t in interactions:
             aInfected = False
             aTime = None
 

@@ -1,11 +1,11 @@
 # Zombie
 The year is 2035, the world is in the middle of a zombie apocalypse. You are not to worry though, as you are currently able to have a relatively peaceful and normal existence (as long as you don’t think about the state of the world) in one of the many safe zones that have been set up all over the world. 
 
-Your safe zone, which is called "insert name", is equipped with the newest and best security technology to keep you and your fellow citizens safe and protected. This security system is the best there is and there is absolutely no way, not even the slightest chance that it will allow a zombie to enter the safe zo– WOOOO-WAAAA-WOOOO …..uh oh…. thats the chilling sound of the zombie siren. 
+Your safe zone is equipped with the newest and best security technology to keep you and your fellow citizens safe and protected. This security system is the best there is and there is absolutely no way, not even the slightest chance that it will allow a zombie to enter the safe zo– WOOOO-WAAAA-WOOOO …..uh oh…. thats the chilling sound of the zombie siren. 
 
-A zombie has been spotted within the walls of the safe zone and may have infected others. We need to find all the infected immediately to stop the virus from doing anymore damage. Luckily, the safe zone has mass surveillance, which can be used to see every interaction the zombie has had. 
+A zombie has been spotted within the walls of the safe zone and may have infected others. We need to find all the infected immediately to stop the virus from doing anymore damage. Luckily, the safe zone has mass surveillance, which can be used to see every interaction the citizens have had. 
 
-Once a person becomes infected, they infect others on the following three days. Two days after a person becomes infected, they start showing symptoms. For example, Alice gets infected on day 0, meaning she can infect others on day 1 to day 4, and on day 2 she starts showing symptoms.
+Once a person becomes infected, they infect others on the following four days. Two days after a person becomes infected, they start showing symptoms. For example, Alice gets infected on day 0, meaning she can infect others on day 1 to day 4, and on day 2 she starts showing symptoms.
 
 # Input
 On the first line of input is the name of the initially infected person (patient zero) followed by an integer $x$, ($0 \le x \le 14$) indicating the day on which the person started showing symptoms. 
@@ -14,9 +14,7 @@ The second line contains an integer $N$ ($0 \le N \le 10^5$), the total number o
 
 The following N lines describe one person. Each line starts with the name of the person followed by zero to three interaction descriptions.
 
-Each interaction description consists of the name of another person, immediately followed by an integer $d$, ($0 \le d \le 14$) indicating the day on which the interaction took place.
-
-All interactions are bidirectional.
+Each interaction description consists of the name of another person, immediately followed by an integer $d$, ($0 \le d \le 3 \cdot 10^5$) indicating the day on which the interaction took place. 
 
 # Output
-Print the names of all infected people in alphabetical order.
+Print the names of all infected people in alphabetical order seperated by new line.
