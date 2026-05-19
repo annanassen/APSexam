@@ -8,7 +8,7 @@ A zombie has been spotted within the walls of the safe zone and may have infecte
 Once a person becomes infected, they infect others on the following four days. Two days after a person becomes infected, they start showing symptoms. For example, Alice gets infected on day 0, meaning she can infect others on day 1 to day 4, and on day 2 she starts showing symptoms.
 
 # Input
-On the first line of input is the name of the initially infected person (patient zero) followed by an integer $x$, ($0 \le x \le 14$) indicating the day on which the person started showing symptoms. 
+On the first line of input is the name of the initially infected person (patient zero). All names contain only upper- and lowercase letters from the latin alphabet (a-z,A-Z). This is followed by an integer $x$, ($0 \le x \le 14$) indicating the day on which the person started showing symptoms. 
 
 The second line contains an integer $N$ ($0 \le N \le 10^5$), the total number of people in the safe zone.
 
