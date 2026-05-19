@@ -1,8 +1,8 @@
-B 10
+Bob 10
 6
-A C 9
-B A 11
-C A 9
-D B 12 E 13
-E F 7
-F 
+Alice Charlie 9
+Bob Alice 11
+Charlie Alice 9
+David Bob 12 Eric 13
+Eric Frank 7
+Frank 

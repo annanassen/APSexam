@@ -1,7 +1,7 @@
-A 2
+Alice 2
 5
-A B 1 D 2
-B A 1 D 2 D 4
-C
-D B 2 B 4 A 2 E 1
-E D 1
+Alice Bob 1 Dave 2
+Bob Alice 1 Dave 2 Dave 4
+Carol
+Dave Bob 2 Bob 4 Alice 2 Eve 1
+Eve Dave 1
